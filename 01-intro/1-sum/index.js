@@ -1,4 +1,3 @@
-
 /**
  * Sum of two numbers
  *

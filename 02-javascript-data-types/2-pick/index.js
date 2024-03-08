@@ -5,7 +5,7 @@
  * @returns {object} - returns the new object
  */
 
-const pick = (obj, ...fields) => {
+export const pick = (obj, ...fields) => {
   let result = [];
   let currentArr = Object.entries(obj);
 

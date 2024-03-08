@@ -1,4 +1,4 @@
-import { sortStrings } from './index.js';
+import {sortStrings} from './index';
 
 describe('javascript-data-types/sort-strings', () => {
   it('should return sorted by "asc" array of strings', () => {

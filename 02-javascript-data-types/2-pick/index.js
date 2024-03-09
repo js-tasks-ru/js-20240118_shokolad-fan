@@ -6,8 +6,8 @@
  */
 
 export const pick = (obj, ...fields) => {
-  let result = [];
-  let currentArr = Object.entries(obj);
+  const result = [];
+  const currentArr = Object.entries(obj);
 
   for (let i = 0; i < currentArr.length; i++) {
     if (currentArr[i].includes(fields[i])) {

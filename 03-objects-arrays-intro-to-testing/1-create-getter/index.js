@@ -20,4 +20,3 @@ export function createGetter(path) {
     return result;
   };
 }
-

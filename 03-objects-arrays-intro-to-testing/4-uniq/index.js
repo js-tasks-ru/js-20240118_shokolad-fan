@@ -4,19 +4,12 @@
  * @returns {*[]} - the new array with uniq values
  */
 export function uniq(arr) {
-  if (!arr) {
-    return [];
-  }
-
   return [...new Set(arr)];
 }
 
+
 // Второй пример решения через цикл for
-// export function uniq(arr) {
-//   if (!arr) {
-//     return [];
-//   }
-//
+// function uniq(arr) {
 //   const currentArr = [...arr].sort((a, b) => a - b);
 //   const result = [];
 //

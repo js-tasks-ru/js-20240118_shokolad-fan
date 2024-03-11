@@ -5,14 +5,14 @@
  */
 export function invertObj(obj) {
   if (!obj) {
-    return undefined;
+    return;
   }
 
   const currentArr = Object.entries({...obj});
   const result = [];
 
-  for (const el of currentArr) {
-    result.push(el.reverse());
+  for (const [key, value] of currentArr) {
+    result.push([value, key]);
   }
 
   return Object.fromEntries(result);

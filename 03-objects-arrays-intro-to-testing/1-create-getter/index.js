@@ -10,10 +10,10 @@ export function createGetter(path) {
     let result = {...obj};
 
     for (const key of keys) {
-      if (key in result) {
+      if (result && key in result) {
         result = result[key];
       } else {
-        return undefined;
+        return;
       }
     }
 

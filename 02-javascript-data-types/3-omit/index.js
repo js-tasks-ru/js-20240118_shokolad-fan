@@ -17,7 +17,7 @@ export const omit = (obj, ...fields) => {
   return Object.fromEntries(result);
 };
 
-const omitForOf = (obj, ...fields) => {
+const omitFor = (obj, ...fields) => {
   const result = [];
   const currentArr = Object.entries(obj);
 
